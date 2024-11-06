@@ -1,0 +1,32 @@
+aside
+{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: LightSteelBlue;
+}
+
+
+section {
+	position: relative;
+	left: 30%;
+	width: 60%;
+	background: LavenderBlush;
+}
+
+h1 {
+	color: SandyBrown;
+}
+
+body {
+	background: LavenderBlush;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

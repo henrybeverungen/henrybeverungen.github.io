@@ -10,10 +10,22 @@ for file in ./drafts/*
 		fi
 	done
 
-rm index.md
-rm index.html
-rm posts.md
-rm posts.html
+if test -f ./index.md; then
+	rm index.md
+fi
+
+if test -f ./index.html; then
+	rm index.html
+fi
+
+if test -f ./posts.md; then
+	rm posts.md
+fi
+
+if test -f ./posts.html; then
+	rm posts.html
+fi
+
 
 echo -e "---\ntitle: Henry Beverungen\n---\n# Posts" >> index.md
 echo -e "---\ntitle: Posts\n---\n# Posts" >> posts.md

@@ -16,7 +16,7 @@ concurrency:
     cancel-in-progress: false
 
 jobs:
-    bssg:
+    build:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repo
@@ -28,6 +28,8 @@ jobs:
               run: sudo apt install pandoc
             - name: Generate Site
               run: bash bssg.sh
+            - name: Upload Artifact
+              uses: actions/upload-pages-artifact@v3
 
     deploy:
         environment:

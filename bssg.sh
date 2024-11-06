@@ -27,7 +27,7 @@ if test -f ./posts.html; then
 fi
 
 
-echo -e "---\ntitle: Henry Beverungen\n---\n# Posts" >> index.md
+echo -e "---\ntitle: Henry Beverungen\n---" >> index.md
 echo -e "---\ntitle: Posts\n---\n# Posts" >> posts.md
 
 for file in $(ls -r -1 ./drafts/*)
